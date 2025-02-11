@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La página del JoL</title>
+
+<link rel="stylesheet" href="styles.css">
+
+</head>
+<script>
+    alert("¡ESTA ES MI PRIMERA PÁGINA DE PRUEBA!");
+</script>
+<script>
+    function mostrarMensaje() {
+        alert("Sos re obediente");
+    }
+</script>
+<script>
+    function cambiarTexto() {
+        document.getElementById("miParrafo").innerHTML = "Pues si, cambió";
+    }
+</script>
+<body>
+    <h1>Holissss</h1>
+    <P>Alta página de prueba, con calculadora y todo...cheto mal</P>
+
+<button onclick="mostrarMensaje()">APRETÁ ACÁ</button>
+
+<h2 id="miParrafo">Si apretás el botón, este texto capaz que cambia</h2>
+<button onclick="cambiarTexto()">Este de acá</button>
+
+<p class="destacado">¿Eso de que cambie el textito no te impresiona?</p>
+
+<p class="Llamativo">Ahora fijate que le podés cambiar el fondo con el boton de acá</p>
+<button id="cambiarColor">Cambiar Color</button>
+
+<p class="destacado">¿Eso de que cambie el color no te impresiona? mirá como puedo saludarte por tu nombre</p>
+
+<input type="text" id="nombreUsuario" placeholder="Escribí tu nombre">
+<button id="saludar">Saludar</button>
+<p id="mensajeSaludo"></p>
+
+<button id="toggleTexto">¿Sabés qué sos vos?</button>
+<p id="texto" style="display: none;"> Una persona que no se sorprende con nada, mirá como se desvanece re top este texto cuando volvés a apretar y vos como si nada.</p>
+
+<h2>Te dejo alta calculadora para que saques la cuentas de lo pobre que sos</h2>
+
+<input type="number" id="num1" placeholder="Número 1">
+<input type="number" id="num2" placeholder="Número 2">
+
+<button id="sumar">+</button>
+<button id="restar">-</button>
+<button id="multiplicar">×</button>
+<button id="dividir">÷</button>
+<button id="potencia">x^y</button>
+<button id="raiz">√x</button>
+<button id="porcentaje">% de</button>
+
+
+<p id="resultado">Y, es más o menos: </p>
+<button id="limpiar">A ver... vamos desde cero, borrá todo acá.</button>
+<button id="modoOscuro">Modo Lucho/Color</button>
+
+
+<h2>Historial de operaciones:</h2>
+<ul id="historial"></ul>
+<button id="borrarHistorial">Borrar Historial</button>
+
+
+ <P>Bueno, ya está, mirá todo lo que tiene, es una págin a de prueba ¿Qué querías, facebook, porno? No no no...</P>
+
+<script src="script.js"></script>
+</body>
+</html>

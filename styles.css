@@ -1,0 +1,123 @@
+    body {
+        background-color: black;
+        font-family: Arial, sans-serif;
+    }
+    h1 {
+        color: lightgrey;
+    }
+h2 {
+        color: lightBLUE;
+    }
+p {
+        color: yellow;
+    }
+.destacado {
+    color: red;
+    font-weight: bold;
+}
+.Llamativo {
+    color: lightgreen;
+    font-weight: bold;
+}
+
+button {
+    background-color: darkblue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+
+button:hover {
+    background-color: navy;
+}
+
+#texto {
+    opacity: 0;
+    display: none;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.mostrar {
+    display: block; /* Lo hace visible */
+    opacity: 1;
+}
+
+h2 {
+    color: lightblue;
+}
+
+input {
+    padding: 10px;
+    margin: 5px;
+    font-size: 16px;
+    text-align: center;
+}
+
+button {
+    background-color: darkblue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    margin: 5px;
+}
+
+button:hover {
+    background-color: navy;
+}
+
+#resultado {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.modo-oscuro {
+    background-color: rgb(20, 20, 20);
+    color: white;
+}
+
+.modo-oscuro h1, .modo-oscuro h2, .modo-oscuro p {
+    color: white;
+}
+
+.modo-oscuro button {
+    background-color: grey;
+}
+
+.modo-oscuro button:hover {
+    background-color: black;
+}
+
+#historial {
+    color: white; /* Hace que el historial sea visible en modo oscuro */
+    font-size: 16px;
+    margin-top: 10px;
+    list-style-type: none;
+    padding: 0;
+}
+.modo-oscuro #historial {
+    color: white;
+}
+
+.modo-claro #historial {
+    color: black;
+}
+
+#potencia, #raiz, #porcentaje {
+    background-color: darkred;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    margin: 5px;
+}
+
+#potencia:hover, #raiz:hover, #porcentaje:hover {
+    background-color: red;
+}
