@@ -5,6 +5,16 @@ const fs = require("fs");
 const app = express();
 app.use(cors());
 app.use(express.json());
+const path = require("path");
+
+// Servir archivos estáticos desde la carpeta "public"
+app.use(express.static(path.join(__dirname, "public")));
+
+// Ruta para servir `index.html` cuando se acceda a la raíz "/"
+app.get("/", (req, res) => {
+    res.sendFile(path.join(__dirname, "public", "index.html"));
+});
+
 
 const HISTORIAL_FILE = "historial.json";
 
